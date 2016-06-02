@@ -1,0 +1,83 @@
+
+
+@import "reset";
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,700,600';
+
+$product-one:#b9da56;
+$product-one-dark: darken($product-one,40%);
+
+$product-one: #6FA9DC;
+$product-two-dark: darken($product-two,40%);
+
+$product-one: #DE6A65;
+$product-three-dark: darken($product-three,40%);
+
+
+$fuente-principal: "Open Sans", sans-serif;
+
+
+#productos{
+    background: #333;
+    padding: 20px;
+    article.producto{ 
+    				  font-family: $fuente-principal;	
+    				  max-width: 400px;
+    				  border-radius: 4px;
+    				  margin: auto;
+    				  background: white;
+    				  padding-bottom: 20px;
+
+     
+        header{
+            background: $product-one;
+            border-bottom: 3px solid $product-one-dark;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            
+            h2{
+                font-size: 25px;
+                text-transform: uppercase;
+                font-weight: 700;
+                margin: 10px 0;
+            }
+            h4{
+                font-size: 50px;
+                &:after{
+                    content: "99";
+                    font-size: 20px;
+                    text-decoration: underline;
+                    position: relative;
+                    top: -20px;
+                }
+            }
+        }
+        .info{
+            ul{
+                margin-bottom: 50px;    
+             li{
+                    border-bottom: 1px solid #cdcdcd;
+                    text-align: center;
+                    font-size: 22px;
+                    line-height: 50px;
+                    color: #454545;
+                    strong{
+                        font-weight: 700;
+                        color: $product-one-dark; }
+
+             }
+            }
+
+            a{  background: black;
+            	color: white;
+            	text-decoration: none;
+            	text-align: center;
+            	display: block;
+            	width: 90%;
+            	margin: auto;
+            	padding: 15px 0;
+            	border-radius: 4px;
+            }
+        }
+    }
+}
